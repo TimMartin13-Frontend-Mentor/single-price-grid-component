@@ -1,0 +1,113 @@
+$cyan: hsl(179, 62%, 43%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-grey: hsl(204, 43%, 93%);
+$grey-blue: hsl(218, 22%, 67%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background-color: $light-grey;
+}
+
+.container {
+  width: 85%;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  .bottom-left {
+    background-color: $cyan;
+  }
+
+  .bottom-right {
+    background-color: lighten($cyan, 10%);
+  }
+}
+
+.content {
+  width: 100%;
+}
+.top,
+.bottom-left,
+.bottom-right {
+  padding: 1.8rem 1.5rem;
+}
+
+.top {
+  // padding: 1.8rem 1.5rem;
+
+  h2 {
+    font-size: 1.2rem;
+    color: $cyan;
+    padding-bottom: 1.2em;
+  }
+  
+  h3 {
+    font-size: 0.9rem;
+    color: $bright-yellow;
+    padding-bottom: 1.2em;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: $grey-blue;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
+  }
+}
+
+.bottom-left {
+  
+  h2 {
+    font-size: 1.1rem;
+    color: #fff;
+    padding-bottom: 1em;
+  }
+  
+  h3 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5em;
+  }
+
+  .price-term {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .price {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+    padding-bottom: 2em;
+  }
+
+  button {
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+    padding: 1rem;
+    background-color: $bright-yellow;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
